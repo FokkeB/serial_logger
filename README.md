@@ -1,9 +1,9 @@
-# serial_logger
+## serial_logger
 
 SERIAL_LOGGER.PY - logs data received over a serial port, coming from a scale of type "Ohaus Defender 5000".
 By fokke@bronsema.net, version 3 of February 2024.
 
-Features:
+# Features:
 - reads data frames from a scale (tested with "Ohaus Defender 5000") and stores this in a csv-file on a USB stick for offline analysis;
 - Filename of logfiles is based on the mac address of Pi (to distinguish logs from multiple instances of this logger) and the timestamp in the first data frame;
 - able to deal with removal of USB drive, will store data locally and copy file to USB stick once inserted;
@@ -17,7 +17,7 @@ Script needs to be run as root to be able to mount usb drives and access serial 
 
 Tested with a Raspberry Pi model B+ v1.2 running Debian Bookworm, Python 3.11.  Newer Pis should work perfectly as well.
 
-installation steps:
+# Installation steps:
 - install OS on an SD-card (see https://www.raspberrypi.com/software/); 
 - put SD in Pi, connect monitor and keyboard, power up, configure via startup menu, keyboard and user (e.g.: logger);
 - login, select root: sudo su (root user will run the script to be able to (un)mount the drive and access the serial port);
@@ -32,7 +32,9 @@ installation steps:
 - optional: copy the marked lines in /boot/config.txt to use the power on/power down button and power LED
 - optional: *pip RPLCD smbus* to use an external i2c display (do not switch on i2c in raspi-config).  
 
-Usage:
+# Usage:
 
     python serial_logger.py <serial port> <path of output file>
 
+# Case design:
+The included case design is a modified version of https://github.com/diy-electronics/raspberrypi-b-plus-case
