@@ -37,4 +37,5 @@ Tested with a Raspberry Pi model B+ v1.2 running Debian Bookworm, Python 3.11.  
     python serial_logger.py <serial port> <path of output file>
 
 ## Case design:
-The included case design is a modified version of https://github.com/diy-electronics/raspberrypi-b-plus-case
+The included case design is a modified version of https://github.com/diy-electronics/raspberrypi-b-plus-case, 
+the same license applies: https://creativecommons.org/licenses/by-sa/4.0/
