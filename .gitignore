@@ -7,3 +7,7 @@
 /.gitignore
 /.gitignore
 /case_design/serial_logger_case_design_Auping.svg
+/schematic/seriallogger_kicad-backups
+/schematic/seriallogger_kicad.kicad_pcb
+/schematic/seriallogger_kicad.kicad_prl
+/schematic/seriallogger_kicad.kicad_pro
